@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devanand Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b5bbd7d52b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>D</h1>
+                    <h2>evanand.</h2>
+                </div>
+                <div>
+                    <ul id="sidemenu">
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="sec1">
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Devanand</span><br>From India</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a student pursuing civil engineering as a major course and computer science as a minor
+                        course in nit Trichy.
+                        I am currently working on flutter app development.
+                        I am an explorer and a versatile person. I enjoy learning new technologies and working on
+                        challenging projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Google cloud</span><br>Experience with cloud storage, virtual machines, monitoring
+                                and logging</li>
+                            <li><span>App Development</span><br>Frontend development with Flutter</li>
+                            <li><span>Web Development</span><br>HTML, CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2022 Nov- 2023 Jan</span>
+                                <br>1. Hands-on-lab in Quicklabs on topics: Essential Google Cloud Infrastructure: Core
+                                Services
+                                <br>2. Set Up and Configure a Cloud Environment in Google Cloud
+                                <br>3. Perform Foundational Infrastructure Tasks in Google Cloud
+                                <br>4. Create and Manage Cloud Resources
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>National Intitute of Technology, Trichy</li>
+                            <li><span>2018-2020</span><br>The Velammal Bodhi Ponneri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Google cloud</h2>
+                    <p>I can create virtual machines, Handle cloud resources, Deploy clusters, Monitor and logging</p>
+                    <a href="https://www.cloudskillsboost.google/public_profiles/11156d7f-81f3-45a6-b297-5e3a3aa432e3">
+                        Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App development</h2>
+                    <p>Create and develop Front-end app development using Flutter</p>
+                    <a href="https://github.com/devanandr001/booktickets">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web development Front-end</h2>
+                    <p>Create Front-end website using HTML, CSS, Javascript</p>
+                    <a href="https://github.com/devanandr001/DWOC-Flipkart-Clone-for-beginners">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./google_cloud.jpeg">
+                    <div class="layer">
+                        <h3>Google Cloud Engineer</h3>
+                        <p>Hands-on experience in Google cloud console</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./clock.png">
+                    <div class="layer">
+                        <h3>Study table analog clock</h3>
+                        <p>Fully functional analog clock to use in study table</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./plane_ticket.png">
+                    <div class="layer">
+                        <h3>Plane Ticket Booking Front-end</h3>
+                        <p>Front-end of Plane ticket booking using Flutter</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>devanand02r@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6379117558</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/devanandr001"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/devanand-r-7a315b202/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/devanand02r/"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRspgxkfQMWRPgdkTjhMXRVhmpBRCGLRPwHRclgvvvcwgfVWVXcNWjnrctXVRRLzQPFgpZv"><i class="fa-solid fa-envelope"></i></a> -->
+                    </div>
+                    <a href="./103120031_Devanand R.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            <p>copyright </p>
+        </div> -->
+    </div>
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }    
+    </script>
+
+
+    <script>
+
+        var sidem = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidem.style.right = "0";
+        }
+        function closemenu() {
+            sidem.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxQ0wRbkVZza9GE3I8EleHG97OAGEYxkFqE8NHI6FzXHZC4lZVMkXC_Fi0k-uPcmq_R/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
